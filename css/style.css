@@ -1,0 +1,86 @@
+.leaves1,
+.leaves2,
+.leaves3 {
+    animation: seasons 6s linear infinite;
+}
+
+.leaves2 {
+    animation-delay: 0.2s;
+}
+
+.leaves3 {
+    animation-delay: 0.4s;
+}
+
+@keyframes seasons {
+    0% {
+        fill: #46a655;
+        opacity: 1;
+    }
+
+    20% {
+        fill: #fcad3a;
+        opacity: 1;
+    }
+
+    40%,
+    60% {
+        fill: #fcad3a;
+        opacity: 0;
+    }
+
+    80% {
+        fill: #46a655;
+        opacity: 1;
+    }
+
+    100% {
+        fill: #46a655;
+        opacity: 1;
+    }
+}
+
+.ground {
+    animation: ground 6s linear infinite;
+}
+
+.ground {}
+
+@keyframes ground {
+
+    0% {
+        fill: #46a655;
+        opacity: 1;
+    }
+
+    20% {
+        fill: #fcad3a;
+        opacity: 1;
+    }
+
+    40%,
+    60% {
+        fill: #c9c7c7;
+        opacity: 1;
+    }
+
+    80% {
+        fill: #46a655;
+        opacity: 1;
+    }
+
+    100% {
+        fill: #46a655;
+        opacity: 1;
+    }
+}
+
+.sun {
+    animation: run 6s linear infinite;
+}
+@keyframes run {
+    0%    { transform: translateX(-100px); }
+    99.99% { transform: translateX(100px); }
+    100%  { transform: translateX(-100px); }
+}
+
