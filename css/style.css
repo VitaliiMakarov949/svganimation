@@ -1,41 +1,83 @@
-.leaves1,
-.leaves2,
-.leaves3 {
-    animation: seasons 6s linear infinite;
-}
-
-.leaves2 {
+.leaves1 {
+    animation: firsttree 6s linear infinite;
     animation-delay: 0.2s;
 }
 
-.leaves3 {
-    animation-delay: 0.4s;
-}
-
-@keyframes seasons {
+@keyframes firsttree {
     0% {
         fill: #46a655;
         opacity: 1;
     }
-
     20% {
         fill: #fcad3a;
         opacity: 1;
     }
-
-    40%,
-    60% {
+    40%, 60% {
         fill: #fcad3a;
         opacity: 0;
     }
-
     80% {
         fill: #46a655;
         opacity: 1;
     }
-
     100% {
         fill: #46a655;
+        opacity: 1;
+    }
+}
+
+.leaves2 {
+    animation: secondtree 6s linear infinite;
+    animation-delay: 0.2s;
+}
+
+@keyframes secondtree {
+    0% {
+        fill: #b7f07d;
+        opacity: 1;
+    }
+    20% {
+        fill: #fcad3a;
+        opacity: 1;
+    }
+    40%, 60% {
+        fill: #fcad3a;
+        opacity: 0;
+    }
+    80% {
+        fill: #b7f07d;
+        opacity: 1;
+    }
+    100% {
+        fill: #b7f07d;
+        opacity: 1;
+    }
+}
+
+.leaves3 {
+    animation: seasons 6s linear infinite;
+    animation-delay: 0.2s;
+}
+
+@keyframes seasons {
+    0% {
+        fill: #7fdc48;
+        opacity: 1;
+    }
+    20% {
+        fill: #fcad3a;
+        opacity: 1;
+    }
+    40%, 60% {
+        fill: #fcad3a;
+        opacity: 0;
+    }
+    80% {
+        fill: #7fdc48;
+        opacity: 1;
+    }
+    100% {
+        fill: #7fdc48;
         opacity: 1;
     }
 }
@@ -43,32 +85,23 @@
 .ground {
     animation: ground 6s linear infinite;
 }
-
-.ground {}
-
 @keyframes ground {
-
     0% {
         fill: #46a655;
         opacity: 1;
     }
-
     20% {
         fill: #fcad3a;
         opacity: 1;
     }
-
-    40%,
-    60% {
+    40%, 60% {
         fill: #c9c7c7;
         opacity: 1;
     }
-
     80% {
         fill: #46a655;
         opacity: 1;
     }
-
     100% {
         fill: #46a655;
         opacity: 1;
@@ -79,8 +112,7 @@
     animation: run 6s linear infinite;
 }
 @keyframes run {
-    0%    { transform: translateX(-100px); }
+    0% { transform: translateX(-100px); }
     99.99% { transform: translateX(100px); }
-    100%  { transform: translateX(-100px); }
+    100% { transform: translateX(-100px); }
 }
-
