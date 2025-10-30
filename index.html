@@ -1,26 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-      <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="2" width="96" height="96" fill="none" stroke="#cccccc" stroke-width="1.5" stroke-dasharray="3,2"/>
-        <circle class="sun" cx="21" cy="23" r="9" fill="#fcad3a"/>
-        <rect class="ground" x="2" y="80" width="95" height="17" fill="#7fdc48"/>
-        <rect class="leaves1" x="30" y="37" width="17" height="37" rx="8.5" fill="#46a655"/>
-        <rect class="leaves2" x="44" y="22" width="20" height="55" rx="10" fill="#b7f07d"/>
-        <rect class="leaves3" x="60" y="43" width="16" height="35" rx="8" fill="#7fdc48"/>
-        <rect x="37" y="62" width="3" height="20" fill="#6c4127"/>
-        <rect x="52" y="59" width="3" height="27" fill="#6c4127"/>
-        <rect x="67" y="65" width="3" height="18" fill="#6c4127"/>
-        <path d="M53.5 77 L57 73" stroke="#6c4127" stroke-width="1.7" />
-        <path d="M53.5 77 L49 73" stroke="#6c4127" stroke-width="1.7" />
-        <path d="M53.5 69 L48 66" stroke="#6c4127" stroke-width="1.7" />
-      </svg>
-      
+  <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2" y="2" width="96" height="96" fill="none" stroke="#cccccc" stroke-width="1.5" stroke-dasharray="3,2" />
+    <circle class="sun" cx="21" cy="23" r="9" fill="#fcad3a" />
+    <rect class="ground" x="2" y="80" width="95" height="17" fill="#7fdc48" />
+    <rect class="leaves1" x="30" y="37" width="17" height="37" rx="8.5" fill="#46a655" />
+    <rect class="leaves2" x="44" y="22" width="20" height="55" rx="10" fill="#b7f07d" />
+    <rect class="leaves3" x="60" y="43" width="16" height="35" rx="8" fill="#7fdc48" />
+    <rect x="37" y="62" width="3" height="20" fill="#6c4127" />
+    <rect x="52" y="59" width="3" height="27" fill="#6c4127" />
+    <rect x="67" y="65" width="3" height="18" fill="#6c4127" />
+    <path d="M53.5 77 L57 73" stroke="#6c4127" stroke-width="1.7" />
+    <path d="M53.5 77 L49 73" stroke="#6c4127" stroke-width="1.7" />
+    <path d="M53.5 69 L48 66" stroke="#6c4127" stroke-width="1.7" />
+  </svg>
+  <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Патерн для заливки кружечків -->
+      <pattern id="dotPattern" patternUnits="userSpaceOnUse" width="8" height="8">
+        <rect x="0" y="0" width="8" height="8" fill="#fff"/>
+        <circle cx="4" cy="4" r="3" fill="#cccccc"/>
+      </pattern>
+    </defs>
+    <rect x="5" y="5" width="290" height="190" fill="none" stroke="#cccccc" stroke-width="2" stroke-dasharray="6,4" />
+    <rect x="15" y="15" width="270" height="170" fill="#b1dcf1" />
+    <g>
+      <rect x="15" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="42" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="69" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="96" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="123" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="150" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="177" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="204" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="231" y="15" width="13.5" height="170" fill="#7dc4e8" />
+      <rect x="258" y="15" width="13.5" height="170" fill="#7dc4e8" />
+    </g>
+
+    <text x="46" y="82" font-family="Lobster" font-size="38" fill="#000" opacity="0.2">the
+      Breaking</text>
+    <text x="40" y="76" font-family="Lobster" font-size="38" fill="#f4b400" stroke="#fff"
+      stroke-width="0.75">the Breaking</text>
+    <text x="84" y="138" font-family="Lobster" font-size="58" fill="#000" opacity="0.2" id="text">Bad</text>
+    <text x="77" y="131" font-family="Lobster" font-size="58" fill="#ff401a" stroke="#fff" stroke-width="1">Bad</text>
+    <pattern id="circle" x="0" y="0" width="2" height="2"
+      patternUnits="userSpaceOnUse">
+      <circle cs="20" cy="20" r="18" fill="url(#text)" stroke="#fff">
+    </pattern>
+    
+  </svg>
+
+  
+
+
+
 </body>
+
 </html>

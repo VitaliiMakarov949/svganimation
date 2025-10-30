@@ -1,3 +1,9 @@
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .leaves1 {
     animation: firsttree 6s linear infinite;
     animation-delay: 0.2s;
